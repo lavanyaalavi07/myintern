@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+   <meta charset="UTF-8">
+   <title>Hair-O-Zen</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="navbar" id="navbars">
+    <div class="logo">
+      <p>My Logo</p>
+    </div>
+    <ul class="nav">
+      <li><a href="select.html">Home</a></li>
+      <li><a href="#">Chatbot</a></li>
+      <li><a href="#About">About us</a></li>
+      <li><a href="#Services">Services</a></li>
+      <li><a href="#Department">Department</a></li>
+      <li><a href="#Doctors">Doctors</a></li>
+      <li><a href="#Contact">Contact us</a></li>
+    </ul>
+  </div>
+  <div class="section">
+    <section id="Home">
+
+      <img src="C:\Users\chefa\Downloads\hair-o-zen-5.jpg">
+      <img src="C:\Users\chefa\Downloads\hair-o-zen-2.jpg">
+      <img src="C:\Users\chefa\Downloads\hair-o-zen-1.jpg">
+      <img src="C:\Users\chefa\Downloads\hair-o-zen-4.jpg">
+
+      <div class="center"><b><i>Welcome to Hair-O-Zen, your serene haven for holistic hair and skin care. Discover a realm of tranquility and well-being where modern medicine, ancient wisdom, and cutting-edge technology unite. Our mission is to empower you on your journey to healthier, more beautiful hair and skin, while nurturing your overall well-being.<b><i></div>
+    </section>
+<br>
+
+    <section id="About">About section</section>
+    <section id="Services">
+<h3 style="font-family: Times new roman; font-size:42px; text-align: center;">SERVICES</h3>
+<div class="part1">
+        <div class="sub1">
+<i class='far fa-address-card' id="logo1"></i>
+<p> Appointment booking. Connect with doctors, labs, and pharmacies hassle-free.</p>
+          </div>
+        <div class="sub2">
+<i class="fa fa-medkit" id="logo1"></i>
+<p>Discover natural remedies from trusted sources. Buy authentic Ayurveda medicines online.</p>
+          </div>
+        <div class="sub3">
+<i class='fas fa-edit' id="logo1"></i>
+<p>Accurate and reliable lab tests. Choose safe and accredited facilities.</p>
+          </div>
+        <div class="sub4">
+<i class='fas fa-hospital' id="logo1"></i>
+<p>Tailored medicines, no substitutes. Your health, our priority.</p>
+          </div></div>
+                <br><br>
+          <div class="part2">
+        <div class="sub5">
+<i class='fas fa-comment-dots' id="logo1"></i>
+<p>Instant medical guidance at your fingertips. Chat with our AI chatbot.</p>
+          </div>
+        <div class="sub21">
+<i class="fa fa-stethoscope" id="logo1"></i>
+<p>Convenient virtual healthcare. Meet doctors online from home.</p>
+          </div>
+        <div class="sub22">
+<i class="fa fa-user-md" id="logo1"></i>
+<p>Expert care for hair and skin. Connect with renowned specialists.</p>
+          </div>
+        <div class="sub23">
+<i class="fa fa-heartbeat" id="logo1"></i>
+<p>Empathetic psychiatrists for teens. Overcome hair-related challenges with confidence.</p>
+          </div></div>
+                <br><br>
+          <div class="part3">
+        <div class="sub24">
+<i class="fa fa-globe" id="logo1"></i>
+<p>Stay informed with health trends worldwide. Powered by machine learning.</p>
+          </div>
+        <div class="sub25">
+<i class='far fa-comments' id="logo1"></i>
+<p>Top-rated healthcare choices. AI-driven suggestions based on real reviews.</p>
+          </div>
+      </div>
+
+    </section>
+    <section id="Department">Department section</section>
+    <section id="Doctors">Doctors section</section>
+    <section id="Contact">Contact section</section>
+  </div>
+
+<script>
+  const carousel = document.getElementById('Home');
+  const images = carousel.getElementsByTagName('img');
+  let currentIndex = 0;
+
+  function showImage(index) {
+    for (let i = 0; i < images.length; i++) {
+      images[i].style.display = 'none';
+    }
+    images[index].style.display = 'block';
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
+
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  }
+
+  showImage(currentIndex);
+  setInterval(nextImage, 4000);
+
+
+
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbars");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
+</script>
+
+</body>     
